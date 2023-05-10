@@ -256,7 +256,7 @@ h2 {
 }
 
 h3 {
-  font-size: 4rem;
+  font-size: 7rem;
 }
 
 h4 {
@@ -264,11 +264,26 @@ h4 {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: inherit;
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-family: "Lora", serif;
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
 }
 
 ul {
@@ -278,7 +293,7 @@ ul {
 }
 
 i {
-  font-size: 4rem;
+  font-size: 7rem;
 }
 
 body {
@@ -291,13 +306,22 @@ body {
   margin: 0 auto;
 }
 
-nav a:hover, header a:hover {
+a:hover {
   font-style: italic;
   text-decoration: underline;
 }
-nav a:focus, header a:focus {
+a:focus {
   font-style: italic;
   text-decoration: underline;
+}
+
+button:hover {
+  font-size: 2.2rem;
+  text-shadow: 3px 3px 10px #fff, -3px -3px 10px rgb(255, 255, 255);
+}
+button:focus {
+  font-size: 2.2rem;
+  text-shadow: 3px 3px 10px #fff, -3px -3px 10px rgb(255, 255, 255);
 }
 
 .navBar {
@@ -336,7 +360,7 @@ header .wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 30px;
+  padding-top: 50px;
   padding-bottom: 100px;
 }
 header .wrapper .headerContent {
@@ -369,13 +393,13 @@ header .wrapper .circle {
   background-color: #dde9c1;
   z-index: -10;
   position: fixed;
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 .about {
   padding: 80px;
 }
-.about .aboutContent {
+.about .aboutMe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -388,8 +412,61 @@ header .wrapper .circle {
           justify-content: center;
   padding: 100px 0;
 }
-.about .aboutContent .aboutMe {
-  width: 48%;
+.about .aboutMe .imgContainer {
+  width: 45%;
+  margin-right: 10px;
+}
+.about .aboutMe .imgContainer img {
+  width: 400px;
+  height: 400px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 50%;
+}
+.about .aboutMe .aboutText {
+  width: 45%;
+  margin-left: 10px;
+}
+
+.skillsItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 100px 0;
+}
+.skillsItems li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projectsGallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 100px 0;
+}
+.projectsGallery .project {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -397,22 +474,23 @@ header .wrapper .circle {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  width: 100%;
+  padding: 100px 0;
+  border-bottom: 1px solid #158de2;
 }
-.about .aboutContent .aboutMe .imgContainer {
-  width: 40%;
+.projectsGallery .project .imgContainer {
+  width: 50%;
 }
-.about .aboutContent .aboutMe .imgContainer img {
+.projectsGallery .project .imgContainer img {
   width: 100%;
 }
-.about .aboutContent .aboutMe .aboutText {
-  width: 60%;
+.projectsGallery .project .imgContainer h3 {
+  margin-top: -22px;
+  line-height: 6.5rem;
+  text-shadow: 2px 2px 10px #fff;
 }
-.about .aboutContent .skills {
-  width: 48%;
-  text-align: left;
-  padding-left: 60px;
-}
-.about .aboutContent .skills ul {
+.projectsGallery .project .contentContainer {
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -420,13 +498,63 @@ header .wrapper .circle {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.about .aboutContent .skills ul li {
+.projectsGallery .project .contentContainer h3 {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.projectsGallery .project .contentContainer .buttonOne {
+  margin-right: 10px;
+}
+.projectsGallery .project .contentContainer .buttonTwo {
+  margin-left: 10px;
+}
+
+.contact .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.contact .wrapper .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 0;
+}
+.contact .wrapper .icons i {
+  font-size: 3rem;
+  padding: 20px;
+}
+.contact .wrapper .icons i:hover {
+  font-size: 3.2rem;
+  text-shadow: 3px 3px 10px #fff, -3px -3px 10px rgb(255, 255, 255);
+}
+.contact .wrapper .icons i:focus {
+  font-size: 3.2rem;
+  text-shadow: 3px 3px 10px #fff, -3px -3px 10px rgb(255, 255, 255);
+}
+.contact .wrapper form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -434,8 +562,37 @@ header .wrapper .circle {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-bottom: 100px;
+}
+.contact .wrapper form .contactName, .contact .wrapper form .contactAddress, .contact .wrapper form .message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  border: none;
+  margin: 10px;
+}
+.contact .wrapper form input {
+  line-height: 3rem;
+}
+.contact .wrapper form textarea {
+  resize: none;
+}
+.contact .wrapper form button {
+  margin: 20px 0;
+}
+
+footer {
   padding: 20px 0;
+}
+footer p {
+  text-align: center;
 }

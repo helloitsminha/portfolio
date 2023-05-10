@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <script src="https://kit.fontawesome.com/449ad7fe01.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -24,9 +25,9 @@
             </button> -->
             <ul>
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div> <!-- end of .wrapper -->
     </nav> <!-- end of .navbar -->
@@ -60,97 +61,109 @@
     </header>
 
     <main>
-        <section class="about">
+        <section class="about" id="about">
             <div class="wrapper">
                 <h2>about me</h2>
-                <div class="aboutContent">
-                    <div class="aboutMe">
-                        <div class="imgContainer">
-                            <img src="./assets/DSC03878.jpg" alt="An image of Minha, a person with a dark shoulder-length bob wearing a denim jacket, holding a microphone and singing in front of a live band.">
-                        </div>
-                        <div class="aboutText">
-                            <p>Hello! It's Minha! I'm a human geographer turned front-end developer based in Toronto, Ontario. 
-                            </p>
-                        </div><!-- end of .aboutText -->
-                    </div><!-- end of .aboutMe -->
-                    <div class="skills">
-                        <h4>my toolkit:</h4>
-                        <ul class="skillsItems">
-                            <li class="html">
-                                <i class="devicon-html5-plain"></i>
-                                <h5>HTML</h5>
-                            </li>
-                            <li class="css">
-                                <i class="devicon-css3-plain"></i>
-                                <h5>CSS</h5>
-                            </li>
-                            <li class="sass">
-                                <i class="devicon-sass-original"></i>
-                                <h5>SASS</h5>
-                            </li>
-                            <li class="javascript">
-                                <i class="devicon-javascript-plain"></i>
-                                <h5>JAVASCRIPT</h5>
-                            </li>
-                            <li class="react">
-                                <i class="devicon-react-original"></i>
-                                <h5>REACT</h5>
-                            </li>
-                            <li class="git">
-                                <i class="devicon-github-original"></i>
-                                <h5>GITHUB/GIT</h5>
-                            </li>
-                            <li class="firebase">
-                                <i class="devicon-firebase-plain"></i>
-                                <h5>FIREBASE</h5>
-                            </li>
-                        </ul>
-                    </div><!-- end of .skills -->
-                </div><!-- end of .aboutContent -->
+                <div class="aboutMe">
+                    <div class="imgContainer">
+                        <img src="./assets/minhaImage.jpg" alt="An image of Minha, a person with a dark shoulder-length bob wearing a denim jacket, holding a microphone and singing in front of a live band.">
+                    </div>
+                    <div class="aboutText">
+                        <p>Hello! It's Minha! I'm a human geographer turned front-end developer based in Toronto, Ontario. 
+                        </p>
+                    </div><!-- end of .aboutText -->
+                </div><!-- end of .aboutMe -->
             </div><!-- end of .wrapper -->
         </section><!-- end of .about -->
 
-        <section class="projects">
+        <section class="skills">
+            <div class="wrapper">
+                <h2>my toolkit</h2>
+                <ul class="skillsItems">
+                    <li class="html">
+                        <i class="devicon-html5-plain"></i>
+                        <h5>HTML</h5>
+                    </li>
+                    <li class="css">
+                        <i class="devicon-css3-plain"></i>
+                        <h5>CSS</h5>
+                    </li>
+                    <li class="sass">
+                        <i class="devicon-sass-original"></i>
+                        <h5>SASS</h5>
+                    </li>
+                    <li class="javascript">
+                        <i class="devicon-javascript-plain"></i>
+                        <h5>JAVASCRIPT</h5>
+                    </li>
+                    <li class="react">
+                        <i class="devicon-react-original"></i>
+                        <h5>REACT</h5>
+                    </li>
+                    <li class="git">
+                        <i class="devicon-github-original"></i>
+                        <h5>GITHUB/GIT</h5>
+                    </li>
+                    <li class="firebase">
+                        <i class="devicon-firebase-plain"></i>
+                        <h5>FIREBASE</h5>
+                    </li>
+                </ul>
+            </div><!-- end of .skills -->
+        </section>
+
+        <section class="projects" id="projects">
             <div class="wrapper">
                 <h2>my projects</h2>
                 <ul class="projectsGallery">
                     <li class="project projectOne">
                         <div class="imgContainer">
-                            <img src="./assets/projectOne.png" alt="Image depicting Minha's project entitled 'Everyday Life With Harper'">
-                        </div>
-                        <div class="textContainer">
+                            <img src="./assets/projectTwo.jpg" alt="Image depicting Minha's project entitled 'The Ultimate Watchlist'">
                             <h3>the ultimate watch list</h3>
+                        </div>
+                        <div class="contentContainer">
+                            <h3>01/</h3>
+                            <div class="aboutProject">
                             <h5>HTML, CSS, JAVASCRIPT</h5>
-                        </div>
-                        <div class="buttonContainer">
-                            <a href="#">view live</a>
-                            <a href="#">view code</a>
-                        </div>
-                    </li>
+                            <div class="buttonContainer">
+                                <a href="#" class="buttonOne">view live</a>
+                                <a href="#" class="buttonTwo">view code</a>
+                            </div>
+                            </div><!-- end of .aboutProject -->
+                        </div><!-- end of .contentContainer -->
+                    </li><!-- end of .projectOne -->
                     <li class="project projectTwo">
                         <div class="imgContainer">
-                            <img src="./assets/projectTwo.png" alt="Image depicting Minha's project entitled 'The Ultimate Watchlist'">
+                            <img src="./assets/projectOne.jpg" alt="Image depicting Minha's project entitled 'Everyday Life With Harper'">
+                            <h3>everyday life with harper</h3>
                         </div>
-                        <div class="textContainer">
-                            <h3>the ultimate watch list</h3>
-                            <h5>HTML, CSS, JAVASCRIPT</h5>
-                        </div>
-                        <div class="buttonContainer">
-                            <a href="#">view live</a>
-                            <a href="#">view code</a>
-                        </div>
-                    </li>
+                        <div class="contentContainer">
+                            <h3>02/</h3>
+                            <div class="aboutProject">
+                                <h5>HTML, CSS</h5>
+                                <div class="buttonContainer">
+                                    <a href="#">view live</a>
+                                    <a href="#">view code</a>
+                                </div><!-- end of .buttonContainer -->
+                            </div><!-- end of .aboutProject -->
+                        </div><!-- end of .contentContainer -->
+                    </li><!-- end of .projectTwo -->
                     <li class="project projectThree">
-                        <div class="imgContainer"></div>
-                        <div class="textContainer">
+                        <div class="imgContainer">
+                            <img src="./assets/projectTwo.jpg" alt="Image depicting Minha's project entitled 'The Ultimate Watchlist'">
                             <h3>the ultimate watch list</h3>
-                            <h5>HTML, CSS, JAVASCRIPT</h5>
                         </div>
-                        <div class="buttonContainer">
-                            <a href="#">view live</a>
-                            <a href="#">view code</a>
-                        </div>
-                    </li>
+                        <div class="contentContainer">
+                            <h3>03/</h3>
+                            <div class="aboutProject">
+                                <h5>HTML, CSS, JAVASCRIPT</h5>
+                                <div class="buttonContainer">
+                                    <a href="#" class="buttonOne">view live</a>
+                                    <a href="#" class="buttonTwo">view code</a>
+                                </div>
+                            </div><!-- end of .aboutProject -->
+                        </div><!-- end of .contentContainer -->
+                    </li><!-- end of .projectThree -->
                 </ul>
             </div><!-- end of .wrapper -->
         </section><!-- end of .projects -->
@@ -160,10 +173,10 @@
                 <h2>say hello!</h2>
                 <section class="socials">
                     <div class="icons">
-                        <a href="#"><span class="sr-only">LinkedIn</span></a>
-                        <a href="#"><span class="sr-only">GitHub</span></a>
-                        <a href="#"><span class="sr-only">Twitter</span></a>
-                        <a href="#"><span class="sr-only">Email</span></a>
+                        <a href="https://www.linkedin.com/in/helloitsminha/"><span class="sr-only">LinkedIn</span><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/helloitsminha"><span class="sr-only">GitHub</span><i class="fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com/HelloItsMinha"><span class="sr-only">Twitter</span><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><span class="sr-only">Email</span><i class="fa-regular fa-envelope"></i></a>
                     </div>
                 </section>
                 <section class="form">
@@ -191,7 +204,7 @@
 
     <footer>
         <div class="wrapper">
-            <p>built in 2023 by Minha Lee</p>
+            <p>built with love in 2023 by Minha Lee</p>
         </div>
     </footer>
 </body>

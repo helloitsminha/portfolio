@@ -29,7 +29,7 @@ h2 {
 }
 
 h3 {
-    font-size: 4rem;
+    font-size: 7rem;
 }
 
 h4 {
@@ -37,10 +37,24 @@ h4 {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: underline;
     color: inherit;
     cursor: pointer;
     transition: 0.3s;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: $headingFont;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
 }
 
 ul {
@@ -50,5 +64,5 @@ ul {
 }
 
 i {
-    font-size: 4rem;
+    font-size: 7rem;
 }
