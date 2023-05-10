@@ -510,6 +510,12 @@ header .wrapper .circle {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.projectsGallery .project .contentContainer .aboutProject h5 {
+  margin: 20px 0;
+}
+.projectsGallery .project .contentContainer .aboutProject p {
+  margin-right: 50px;
+}
 .projectsGallery .project .contentContainer h3 {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
@@ -677,6 +683,9 @@ footer p {
   main .projects .wrapper .projectsGallery .project .contentContainer .aboutProject {
     margin-top: -60px;
     z-index: 10;
+  }
+  main .projects .wrapper .projectsGallery .project .contentContainer .aboutProject p {
+    margin-right: 0;
   }
 }
 @media (max-width: 480px) {

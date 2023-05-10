@@ -28,6 +28,16 @@
             flex-direction: column;
             justify-content: space-between;
 
+            .aboutProject {
+                h5 {
+                margin: 20px 0;
+                }
+                p {
+                    margin-right: 50px;
+                }
+
+            }
+
             h3 {
                 writing-mode: vertical-rl;
                 transform: rotate(180deg);
