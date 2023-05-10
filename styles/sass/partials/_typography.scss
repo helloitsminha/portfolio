@@ -1,0 +1,17 @@
+// set root element font size to 67.5% so that 1rem = 10px
+html {
+    font-size: 67.5%;
+}
+
+body {
+    font-family: $bodyFont;
+    font-size: 2rem;
+    color: $tertiaryColor;
+}
+
+h1{
+    font-family: $headingFont;
+    // font-style: italic;
+    text-transform: uppercase;
+    font-size: 8rem;
+}
