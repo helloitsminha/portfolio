@@ -6,3 +6,14 @@ body {
     width: 90%;
     margin: 0 auto;
 }
+
+nav a, header a {
+    &:hover {
+        font-style: italic;
+        text-decoration: underline;
+    }
+    &:focus {
+        font-style: italic;
+        text-decoration: underline;
+    }
+}
