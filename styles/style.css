@@ -296,6 +296,10 @@ i {
   font-size: 7rem;
 }
 
+:root {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #e3ebd3;
 }
@@ -322,6 +326,12 @@ button:hover {
 button:focus {
   font-size: 2.2rem;
   text-shadow: 3px 3px 10px #fff, -3px -3px 10px rgb(255, 255, 255);
+}
+
+.btt {
+  position: fixed;
+  font-size: 4rem;
+  color: #158de2;
 }
 
 .navBar {
@@ -436,9 +446,8 @@ header .wrapper .circle {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 100px 0;
@@ -454,6 +463,7 @@ header .wrapper .circle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 30px 30px;
 }
 
 .projectsGallery {
@@ -464,7 +474,7 @@ header .wrapper .circle {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 100px 0;
+  padding: 0;
 }
 .projectsGallery .project {
   display: -webkit-box;
@@ -528,6 +538,7 @@ header .wrapper .circle {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 100px;
 }
 .contact .wrapper .icons {
   display: -webkit-box;
@@ -595,4 +606,111 @@ footer {
 }
 footer p {
   text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .about .wrapper .aboutMe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 100px 0;
+  }
+  .about .wrapper .aboutMe .imgContainer {
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about .wrapper .aboutMe .aboutText {
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+  }
+}
+@media (max-width: 940px) {
+  header h1 {
+    font-size: 13.2rem;
+  }
+  main h2 {
+    font-size: 6.5rem;
+  }
+}
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 10rem;
+  }
+  main .projects .wrapper .projectsGallery .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .projects .wrapper .projectsGallery .project .imgContainer, main .projects .wrapper .projectsGallery .project .contentContainer {
+    width: 100%;
+  }
+  main .projects .wrapper .projectsGallery .project .imgContainer h3 {
+    font-size: 5rem;
+    line-height: 5rem;
+    margin-top: -20px;
+  }
+  main .projects .wrapper .projectsGallery .project .contentContainer {
+    text-align: center;
+  }
+  main .projects .wrapper .projectsGallery .project .contentContainer .smallScreen {
+    margin-left: -500px;
+  }
+  main .projects .wrapper .projectsGallery .project .contentContainer .aboutProject {
+    margin-top: -60px;
+    z-index: 10;
+  }
+}
+@media (max-width: 480px) {
+  .navBar ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .navBar ul li {
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+  }
+  header h1 {
+    font-size: 8.5rem;
+  }
+  header h4 {
+    font-size: 2rem;
+  }
+  header .wrapper .headerContent .hello {
+    padding-top: 100px;
+  }
+  main h2 {
+    font-size: 5rem;
+  }
+  main .about {
+    padding-top: 20;
+  }
+  main .about .aboutMe .imgContainer img {
+    height: 325px;
+    width: 325px;
+  }
+  .contact .wrapper {
+    width: 90%;
+  }
 }

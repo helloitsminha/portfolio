@@ -1,3 +1,6 @@
+:root {
+    scroll-behavior: smooth;
+}
 body {
     background-color: $primaryColor;
 }
@@ -28,3 +31,9 @@ button {
         text-shadow: 3px 3px 10px $solidWhite, -3px -3px 10px rgba(255, 255, 255, 1)
     }
 }
+
+    .btt {
+        position: fixed;
+        font-size: 4rem;
+        color: $tertiaryColor;
+    }
